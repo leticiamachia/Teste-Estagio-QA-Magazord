@@ -71,6 +71,6 @@ Os testes devem garantir que cada campo aceite apenas dados válidos, rejeite fo
 | CT-010   | Rejeitar campo com apenas espaços    | Garantir que o sistema não aceite apenas espaços em branco. | Usuário na tela de cadastro    | 1. Clicar no campo Telefone.<br>2. Inserir “   ”.<br>3. Clicar em Salvar. | Mensagem de erro "Campo obrigatório" exibida e nenhum dado gravado no banco de dados. |
 | **Casos de limite** |  |  |  |  |  |
 | CT-011   | Validar limite mínimo de dígitos     | Garantir que o sistema não aceite números de telefone com menos de 11 dígitos. | Usuário na tela de cadastro    | 1. Clicar no campo Telefone.<br>2. Inserir “4799123”.<br>3. Clicar em Salvar. | Mensagem de erro “Telefone inválido” exibida e nenhum dado gravado no banco de dados. |
-| CT-012   | Validar limite máximo de dígitos     | Garantir que o sistema não aceite números de telefone com mais de 19 caracteres. | Usuário na tela de cadastro    | 1. Clicar no campo Telefone.<br>2. Inserir “4799123456789123456789”.<br>3. Clicar em Salvar. | Mensagem de erro “Telefone inválido” exibida e nenhum dado gravado no banco de dados. |
+| CT-012   | Validar limite máximo de dígitos     | Garantir que o sistema não aceite números de telefone com mais de 19 caracteres (+55 (47) 99123-4567). | Usuário na tela de cadastro    | 1. Clicar no campo Telefone.<br>2. Inserir “4799123456789123456789”.<br>3. Clicar em Salvar. | Mensagem de erro “Telefone inválido” exibida e nenhum dado gravado no banco de dados. |
 
 
