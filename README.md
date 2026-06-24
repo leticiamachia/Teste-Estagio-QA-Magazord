@@ -11,8 +11,6 @@ Criar Casos de Teste para validar a entrada de dados nos seguintes campos de cad
 
 Os testes devem garantir que cada campo aceite apenas dados válidos, rejeite formatos incorretos e exiba mensagens de erro quando necessário.
 
-**Casos de Teste: Nome Completo**
-
 ## Casos de Teste — Nome Completo
 
 | **ID** | **Título** | **Objetivo** | **Pré-condição** | **Passos** | **Resultados Esperados** |
