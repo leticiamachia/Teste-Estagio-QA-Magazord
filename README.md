@@ -135,4 +135,9 @@ Os testes devem garantir que cada campo aceite apenas dados válidos, rejeite fo
 # Parte 2: Desafio - Análise de Erro em Arquivo XML
 Analisar o erro causado por tentativa de importação de um arquivo XML de GNRE no site https://www.gnre.pe.gov.br:444/gnre/v/lote/processar
 
+**Situação:** Processado com pendências.
+**Erro reportado:** Erro de Validação - :
+**Código:** 700
+**Campo:** item_referencia
+**Descrição:** Referencia deve ser a mesma do vencimento informado
 
