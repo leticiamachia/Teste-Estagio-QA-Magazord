@@ -152,7 +152,7 @@ Analisar o erro causado por tentativa de importação de um arquivo XML de GNRE 
 - No Manual do Contribuinte GNRE versão 2.00, publicado pela SEFAZ‑PE, o erro 700 – item_referencia está descrito exatamente assim:<br>
 “Referência deve ser a mesma do vencimento informado.”<br>
 - Esse erro ocorre porque o sistema valida se o mês e ano da referência informados no XML correspondem ao mês e ano da data de vencimento. A referência indica mês 05 e ano 2023, ou seja, maio de 2023, porém a data de vencimento está para 2024-01-11. O sistema espera que o mês e ano da referência sejam iguais ao mês e ano da data de vencimento. <br>
-- **Solução:** Mudar o mês para 01 e ano para 2024 em <referencia> no arquivo XML:<br>
+- **Solução:** Mudar o mês para 01 e ano para 2024 em < referencia > no arquivo XML:<br>
 < referencia ><br>
     < mes >01</ mes ><br>
     < ano >2024</ ano ><br>
