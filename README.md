@@ -152,7 +152,7 @@ Analisar o erro causado por tentativa de importação de um arquivo XML de GNRE 
 - No Manual do Contribuinte GNRE versão 2.00, publicado pela SEFAZ‑PE, o erro 700 – item_referencia está descrito exatamente assim:<br>
 “Referência deve ser a mesma do vencimento informado.”<br>
 - Esse erro ocorre porque o sistema valida se o mês e ano da referência informados no XML correspondem ao mês e ano da data de vencimento. A referência indica mês 05 e ano 2023, ou seja, maio de 2023, porém a data de vencimento está para 2024-01-11. O sistema espera que o mês e ano da referência sejam iguais ao mês e ano da data de vencimento. <br>
-**Solução:** Mudar o mês para 01 e ano para 2024 em <referencia> no arquivo XML:<br>
+- **Solução:** Mudar o mês para 01 e ano para 2024 em <referencia> no arquivo XML:<br>
 < referencia ><br>
     < mes >01</ mes ><br>
     < ano >2024</ ano ><br>
@@ -164,11 +164,11 @@ Analisar o erro causado por tentativa de importação de um arquivo XML de GNRE 
 - **OBS:** Apesar dos códigos dos municípios não estarem de acordo com os códigos oficiais do IBGE (sem os dois números da frente = código do Estado) de acordo com este tutorial de como gerar o arquivo XML na GRNE: https://ajuda.omie.com.br/pt-BR/articles/4048488-gerando-o-xml-da-gnre o sistema aparentemente aceita e valida sem o código do Estado.
 
 ## Fontes de pesquisa:
-https://medium.com/gtsw/21-casos-de-teste-fundamentais-78cec93d83a
-https://www.youtube.com/watch?v=-Yz1lWiyOwc
-https://testrigor.com/blog/how-to-write-test-cases-detailed-examples/
-https://monday.com/blog/pt/desenvolvimento/modelo-de-caso-de-teste/
-**Documento com todos os casos de teste:** https://docs.google.com/document/d/1kmiVljkCRVQVIN-IhAEpObeL-gvx64LjlExwqfC6LDA/edit?usp=sharing
+https://medium.com/gtsw/21-casos-de-teste-fundamentais-78cec93d83a <br>
+https://www.youtube.com/watch?v=-Yz1lWiyOwc <br>
+https://testrigor.com/blog/how-to-write-test-cases-detailed-examples/ <br>
+https://monday.com/blog/pt/desenvolvimento/modelo-de-caso-de-teste/ <br>
+**Documento com todos os casos de teste:** https://docs.google.com/document/d/1kmiVljkCRVQVIN-IhAEpObeL-gvx64LjlExwqfC6LDA/edit?usp=sharing <br>
 **Ferramenta utilizada para converter o documento em tabela estilo GitHub:** https://copilot.microsoft.com/
 
 
