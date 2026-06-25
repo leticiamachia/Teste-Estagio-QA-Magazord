@@ -143,7 +143,7 @@ Analisar o erro causado por tentativa de importação de um arquivo XML de GNRE 
 
 ## Principal erro informado:
 
-<referencia><br>
+´´´<referencia><br>´´´
     <mes>05</mes><br>
     <ano>2023</ano><br>
 </referencia><br>
@@ -160,7 +160,7 @@ Esse erro ocorre porque o sistema valida se o mês e ano da referência informad
 
 ## Erros extras:
 - <CNPJ>17637*********</CNPJ> - O CNPJ não seria aceito pela GNRE com os arteriscos, de acordo com a imagem o CNPJ correto seria: 17637706000242. Se refere a uma empresa de móveis localizada em São Bento do Sul - SC, batendo perfeitamente com a rua e CEP inserido no arquivo XML.<br>
-- <valor>42230517637*********55005000000**1000015949</valor> - Este valor referente ao código 77 também não seria aceito, normalmente seria um valor numérico ou alfanumérico.
+- <valor>42230517637*********55005000000**1000015949</valor> - Este valor referente ao código 77 também não seria aceito, normalmente seria um valor numérico ou alfanumérico.<br>
 **OBS:** Apesar dos códigos dos municípios não estarem de acordo com os códigos oficiais do IBGE (sem os dois números da frente = código do Estado) de acordo com este tutorial de como gerar o arquivo XML na GRNE: https://ajuda.omie.com.br/pt-BR/articles/4048488-gerando-o-xml-da-gnre o sistema aparentemente aceita e valida sem o código do Estado.
 
 
