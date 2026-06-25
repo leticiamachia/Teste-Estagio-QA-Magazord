@@ -141,3 +141,28 @@ Analisar o erro causado por tentativa de importação de um arquivo XML de GNRE 
 **Campo:** item_referencia<br>
 **Descrição:** Referencia deve ser a mesma do vencimento informado
 
+## Principal erro informado:
+
+<referencia><br>
+    <mes>05</mes><br>
+    <ano>2023</ano><br>
+</referencia><br>
+<dataVencimento>2024-01-11</dataVencimento>
+
+No Manual do Contribuinte GNRE versão 2.00, publicado pela SEFAZ‑PE, o erro 700 – item_referencia está descrito exatamente assim:<br>
+“Referência deve ser a mesma do vencimento informado.”<br>
+Esse erro ocorre porque o sistema valida se o mês e ano da referência informados no XML correspondem ao mês e ano da data de vencimento. A referência indica mês 05 e ano 2023, ou seja, maio de 2023, porém a data de vencimento está para 2024-01-11. O sistema espera que o mês e ano da referência sejam iguais ao mês e ano da data de vencimento. <br>
+**Solução:** Mudar o mês para 01 e ano para 2024 em <referencia> no arquivo XML:<br>
+<referencia><br>
+    <mes>01</mes><br>
+    <ano>2024</ano><br>
+</referencia><br>
+
+## Erros extras:
+- <CNPJ>17637*********</CNPJ> - O CNPJ não seria aceito pela GNRE com os arteriscos, de acordo com a imagem o CNPJ correto seria: 17637706000242. Se refere a uma empresa de móveis localizada em São Bento do Sul - SC, batendo perfeitamente com a rua e CEP inserido no arquivo XML.<br>
+- <valor>42230517637*********55005000000**1000015949</valor> - Este valor referente ao código 77 também não seria aceito, normalmente seria um valor numérico ou alfanumérico.
+**OBS:** Apesar dos códigos dos municípios não estarem de acordo com os códigos oficiais do IBGE (sem os dois números da frente = código do Estado) de acordo com este tutorial de como gerar o arquivo XML na GRNE: https://ajuda.omie.com.br/pt-BR/articles/4048488-gerando-o-xml-da-gnre o sistema aparentemente aceita e valida sem o código do Estado.
+
+
+
+
